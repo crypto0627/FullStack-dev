@@ -1,0 +1,63 @@
+name: Frontend deploy
+
+on: 
+  push:
+    branches:
+      - main # The branch the action should deploy from.
+    paths:
+      - 'apps/express-frontend/**' # The path to your build output folder.
+      - 'pnpm-*'
+      - '.github/workflows/ghpage.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21.x'
+          cache: pnpm
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      # - name: Create Env File
+      #   run: |
+      #     touch ./apps/web/.env
+      #     echo NEXT_PUBLIC_PRIVATE_KEY=${{secrets.NEXT_PUBLIC_PRIVATE_KEY}} >> ./apps/web/.env
+      
+      - name: Build my App
+        run: pnpm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: apps/express-frontend/out
+  
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
