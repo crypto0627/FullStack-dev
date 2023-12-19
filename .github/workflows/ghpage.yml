@@ -40,8 +40,8 @@ jobs:
       
       # - name: Create Env File
       #   run: |
-      #     touch ./apps/web/.env
-      #     echo NEXT_PUBLIC_PRIVATE_KEY=${{secrets.NEXT_PUBLIC_PRIVATE_KEY}} >> ./apps/web/.env
+      #     touch ./apps/web3/.env
+      #     echo NEXT_PUBLIC_PRIVATE_KEY=${{secrets.NEXT_PUBLIC_PRIVATE_KEY}} >> ./apps/web3/.env
       
       - name: Build my App
         run: pnpm run build

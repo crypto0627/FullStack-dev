@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { NextPage } from "next";
 
 const LandingPage2: NextPage = () => {
@@ -5,7 +6,7 @@ const LandingPage2: NextPage = () => {
     <div className="relative bg-colour-secondary-white-100-general w-full h-[4628px] overflow-hidden text-left text-base text-colour-main-blue-400 font-bold-26">
       <div className="absolute h-[25.09%] w-[132.73%] top-[-1.06%] right-[-32.45%] bottom-[75.97%] left-[-0.28%] text-center text-colour-main-blue-500">
         <div className="absolute h-[88.29%] w-[75.55%] top-[4.22%] right-[24.45%] bottom-[7.49%] left-[0%]" />
-        <img
+        <Image
           className="absolute h-full w-[77.96%] top-[0%] right-[0%] bottom-[0%] left-[22.04%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/designer-1@2x.png"
@@ -72,7 +73,7 @@ const LandingPage2: NextPage = () => {
           </div>
           <div className="absolute w-full top-[0px] left-[0px] text-17xl leading-[48px] font-medium text-colour-main-blue-900 inline-block">{`Light, Fast & Powerful`}</div>
         </div>
-        <img
+        <Image
           className="absolute h-[55.5%] w-[33.33%] top-[21.51%] right-[53.13%] bottom-[22.99%] left-[13.54%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/undraw-happy-news-hxmt@2x.png"
@@ -90,7 +91,7 @@ const LandingPage2: NextPage = () => {
           </div>
           <div className="absolute w-full top-[0px] left-[0px] text-17xl leading-[48px] font-medium text-colour-main-blue-900 inline-block">{`Light, Fast & Powerful`}</div>
         </div>
-        <img
+        <Image
           className="absolute h-[68.01%] w-[37.5%] top-[16.13%] right-[51.04%] bottom-[15.85%] left-[11.46%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/undraw-social-influencer-sgsv@2x.png"
@@ -98,7 +99,7 @@ const LandingPage2: NextPage = () => {
       </div>
       <div className="absolute h-[16.03%] w-full top-[23.98%] right-[0%] bottom-[59.98%] left-[0%] text-xs text-colour-main-grey-600">
         <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]" />
-        <img
+        <Image
           className="absolute h-[70.66%] w-[37.5%] top-[14.77%] right-[11.46%] bottom-[14.57%] left-[51.04%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/undraw-mobile-login-ikmv@2x.png"
@@ -108,7 +109,7 @@ const LandingPage2: NextPage = () => {
           <div className="absolute w-full top-[50px] left-[0px] text-base leading-[26px] font-medium text-colour-main-blue-900 inline-block">
             Title Goes Here
           </div>
-          <img
+          <Image
             className="absolute w-full top-[0px] right-[0px] left-[0px] max-w-full overflow-hidden h-9 object-cover"
             alt=""
             src="/elementcardinfocardsmalliconpositionleft@2x.png"
@@ -119,7 +120,7 @@ const LandingPage2: NextPage = () => {
           <div className="absolute w-full top-[50px] left-[0px] text-base leading-[26px] font-medium text-colour-main-blue-900 inline-block">
             Title Goes Here
           </div>
-          <img
+          <Image
             className="absolute w-full top-[0px] right-[0px] left-[0px] max-w-full overflow-hidden h-9 object-cover"
             alt=""
             src="/elementcardinfocardsmalliconpositionleft@2x.png"
@@ -154,14 +155,14 @@ const LandingPage2: NextPage = () => {
             Purchase Now
           </div>
         </div>
-        <img
+        <Image
           className="absolute h-[57.14%] w-[30.9%] top-[21.59%] right-[54.58%] bottom-[21.26%] left-[14.51%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/undraw-mention-6k5d@2x.png"
         />
       </div>
       <div className="absolute h-[20.27%] w-[176.87%] top-[77.95%] right-[-33.79%] bottom-[1.78%] left-[-43.08%] text-center text-sm text-colour-secondary-white-100-general">
-        <img
+        <Image
           className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover opacity-[0.5] mix-blend-normal"
           alt=""
           src="/rectangle@2x.png"
@@ -210,27 +211,27 @@ const LandingPage2: NextPage = () => {
             Contact
           </div>
         </div>
-        <img
+        <Image
           className="absolute h-[7.41%] w-[1.11%] top-[75.93%] right-[11.46%] bottom-[16.67%] left-[87.43%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/iconsocialinstagram@2x.png"
         />
-        <img
+        <Image
           className="absolute h-[7.41%] w-[1.11%] top-[75.93%] right-[14.65%] bottom-[16.67%] left-[84.24%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/iconsocialinstagram-copy@2x.png"
         />
-        <img
+        <Image
           className="absolute h-[7.41%] w-[1.11%] top-[75.93%] right-[17.85%] bottom-[16.67%] left-[81.04%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/iconsocialinstagram-copy-2@2x.png"
         />
-        <img
+        <Image
           className="absolute h-[7.41%] w-[1.11%] top-[75.93%] right-[21.04%] bottom-[16.67%] left-[77.85%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/iconsocialinstagram-copy-3@2x.png"
         />
-        <img
+        <Image
           className="absolute h-[7.41%] w-[1.11%] top-[75.93%] right-[24.24%] bottom-[16.67%] left-[74.65%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/iconsocialinstagram-copy-4@2x.png"
